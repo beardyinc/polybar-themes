@@ -13,7 +13,7 @@ change_color() {
 	sed -i -e "s/module-fg = #.*/module-fg = $MF/g" $PFILE
 	sed -i -e "s/primary = #.*/primary = $AC/g" $PFILE
 	sed -i -e 's/secondary = #.*/secondary = #E53935/g' $PFILE
-	sed -i -e 's/alternate = #.*/alternate = #7cb342/g' $PFILE
+	sed -i -e 's/alternate = #.*/alternate = #999999/g' $PFILE
 	
 	# rofi
 	cat > $RFILE <<- EOF
@@ -78,7 +78,7 @@ elif  [[ $1 = "--light-blue" ]]; then
 	change_color
 elif  [[ $1 = "--light-green" ]]; then
 	MF="#2E2E2E"
-	AC="#7cb342"
+	AC="#999999"
 	change_color
 elif  [[ $1 = "--lime" ]]; then
 	MF="#2E2E2E"
